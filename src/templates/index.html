@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles.css') }}">
+  <title>audiobooker</title>
+</head>
+<header>
+  <div class = "container">
+  <h1> audiobooker </h1>
+    <button class = "btn"> about </p>
+    <a target = "_blank" href="https://github.com/drewdawg8">
+      <button class = "btn"> source </button>
+    </a>
+  </div>
+</header>
+<body>
+  <div id="wrap">
+    <div id="main">
+      <h1 align="center">  Upload the picture you wish to to read </h1>
+      <form align = "center" method=post enctype=multipart/form-data>
+        <br><br>
+        <input type="file" name="file" accept="image/*">
+        <br><br>
+        <input type="submit">
+      </form>
+    </div>
+  </div>
+</body>
+
+<div id="footer"></div>
+</html>
